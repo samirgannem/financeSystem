@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { colors } from '../../assets/globals'
 
 const Footer = () => {
     (function () {
@@ -78,8 +79,8 @@ export default Footer
 
 const BottomWrapper = styled.footer`
     width: 100%;
-    background: rgb(39, 38, 38, .8);
-    color: white;
+    background: ${colors.backMenu};
+    color: ${colors.tittlesColor};
     padding: .3rem;
 `
 
