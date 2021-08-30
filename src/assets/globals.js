@@ -26,7 +26,7 @@ const colors = {
 
   const layout = {
     menuLine: '2px',
-    menuTop: '3.75rem',
+    menuTop: '-2.68rem',
 
     borderRadius: '5px',
     borderType: 'solid',
