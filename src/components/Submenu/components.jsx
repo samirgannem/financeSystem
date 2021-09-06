@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { colors, layout } from '../../assets/globals'
 
@@ -15,7 +14,7 @@ const MenuApp = styled.ul`
     border: ${layout.menuLine} ${layout.borderType} ${colors.borderBox};
 `
 
-const StyledMenuObj = styled(Link)`
+const StyledMenuObj = styled.ul`
     list-style: none;
     color: ${colors.textMenu};
     text-decoration: none;
@@ -29,6 +28,7 @@ const MenuObject = ({ to, content }) => {
     return (
       <StyledMenuObj
         to={to}
+        children
       >
         <b>{content}</b>
       </StyledMenuObj>

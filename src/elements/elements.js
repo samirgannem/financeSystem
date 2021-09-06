@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { colors, layout } from '../assets/globals'
 
@@ -22,7 +22,7 @@ const MenuApp = styled.ul`
     border: ${layout.menuLine} ${layout.borderType} ${colors.borderBox};
 `
 
-const MenuArq = styled(Link)`
+const MenuArq = styled.ul`
     list-style: none;
     color: ${colors.textMenu};
     text-decoration: none;
@@ -58,9 +58,10 @@ const MenuIconDiv = styled.div`
     }     
 `
 
-const MenuIcon = styled(Link)`
+const MenuIcon = styled.ul`
     list-style: none;
     heigth: 100%;
+    z-index: 1;
     
     &:hover {
         color: ${colors.tittlesColor};
@@ -199,7 +200,8 @@ const TitleBox1 = styled.a`
     padding: .3rem .5rem;
 `
 
-const BtnClose = styled(Link)`
+// const BtnClose = styled(Link)`
+const BtnClose = styled.button`
     color: red;
     text-decoration: none;
     background: ${colors.backgroundInput};
@@ -243,8 +245,9 @@ const MenuSty01 = styled.div`
     box-shadow: ${layout.boxShadowMenu1} ${layout.boxShadowMenu2} ${layout.boxShadowMenu3} ${colors.shadow}
 `
 
-const MenuObject = styled(Link)`
-    list-style: none;
+// const MenuObject = styled(Link)`
+const MenuObject = styled.ul`
+list-style: none;
     color: ${colors.textMenu};
     text-decoration: none;
     

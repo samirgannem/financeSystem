@@ -1,5 +1,6 @@
 import React from 'react'
 import { ButtonActions, FrameButton, FrameGroup, InputBox, CadastroBox, TitleBox, TitleBox1, BtnClose, LabelBox, colors } from '../../../elements/elements' 
+import { viewClose } from '../Clientes/index'
 
 export default function Menu01_Fornecedores () {
     return (
@@ -9,7 +10,7 @@ export default function Menu01_Fornecedores () {
                 <TitleBox1>
                     - Cadastro de fornecedores
                 </TitleBox1>
-                <BtnClose to="/">
+                <BtnClose onClick={()=>viewClose('#fornecedores')}>
                         X
                 </BtnClose>
             </TitleBox>
@@ -81,7 +82,7 @@ export default function Menu01_Fornecedores () {
                 <ButtonActions color = 'blue'>
                     Salvar
                 </ButtonActions>
-                <ButtonActions color = 'red'>
+                <ButtonActions color = 'red' onClick={()=>viewClose('#fornecedores')}>
                     Cancelar
                 </ButtonActions>
             </FrameButton>

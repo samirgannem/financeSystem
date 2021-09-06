@@ -13,9 +13,8 @@ import styled from 'styled-components';
 function App() {
   return (
     <Wrapper>
- 
+      <Menu />
       <Router>
-        <Menu />
         <Routes />
       </Router>
       <Footer />

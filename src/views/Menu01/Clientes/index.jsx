@@ -9,7 +9,7 @@ export default function Menu01_Clientes () {
                 <TitleBox1>
                     - Cadastro de clientes
                 </TitleBox1>
-                <BtnClose to="/">
+                <BtnClose  onClick={()=>viewClose('#clientes')}>
                         X
                 </BtnClose>
             </TitleBox>
@@ -81,7 +81,7 @@ export default function Menu01_Clientes () {
                 <ButtonActions color = 'blue'>
                     Salvar
                 </ButtonActions>
-                <ButtonActions color = 'red'>
+                <ButtonActions color = 'red' onClick={()=>viewClose('#clientes')}>
                     Cancelar
                 </ButtonActions>
             </FrameButton>
@@ -95,3 +95,11 @@ export function clearForm () {
     var pCod = document.getElementById('codText');
     pCod.textContent = '';
 }
+
+function viewClose(viewClose) {
+    var element = ''
+    element = document.querySelector(viewClose)
+    element.style.display = 'none'
+}
+
+export { viewClose }
